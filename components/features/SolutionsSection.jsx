@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Package, BarChart3, Workflow } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { createPageUrl } from '@/utils';
 
 const solutions = [
@@ -144,3 +144,4 @@ export default function SolutionsSection() {
     </section>
   );
 }
+

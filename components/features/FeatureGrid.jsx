@@ -12,7 +12,7 @@ import {
   Workflow } from
 'lucide-react';
 import FeatureCard from './FeatureCard';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { createPageUrl } from '@/utils';
 
 const servicios = [
@@ -141,3 +141,4 @@ export default function FeatureGrid() {
     </section>);
 
 }
+

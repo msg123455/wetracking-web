@@ -239,3 +239,4 @@ export default function AcademySetup({ onProfileCreated }) {
     </div>
   );
 }
+

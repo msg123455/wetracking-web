@@ -373,3 +373,4 @@ export default function AdminVideoManager({ videos, onUpdate }) {
     </div>
   );
 }
+

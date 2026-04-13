@@ -167,3 +167,4 @@ export default function InlineVideoUpload({ videoKey, onUpdate }) {
     </motion.div>
   );
 }
+

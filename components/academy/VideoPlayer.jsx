@@ -189,3 +189,4 @@ export default function VideoPlayer({ video, userEmail, onCompleted, onProgress,
     </div>
   );
 }
+

@@ -222,3 +222,4 @@ export default function AcademyAdmin({ user, profile }) {
     </div>
   );
 }
+

@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Menu, X, ChevronDown, Droplet, Factory, Warehouse, Headphones, Dumbbell, Shirt, Package, Shield, MapPin, Grid3x3, Laptop, GraduationCap } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { createPageUrl } from '@/utils';
 
 const MagneticButton = ({ children, className, onClick }) => {
@@ -259,3 +259,4 @@ export default function GlassNavbar() {
     </>
   );
 }
+

@@ -143,3 +143,4 @@ export default function AcademyStudent({ profile, onLogout, onOpenChat }) {
     </div>
   );
 }
+

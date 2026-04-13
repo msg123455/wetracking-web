@@ -93,3 +93,4 @@ export default function AcademyLogin({ onLogin, onRegister }) {
     </div>
   );
 }
+

@@ -128,3 +128,4 @@ export default function ExamComponent({ exam, profile, existingResult, onResult 
     </div>
   );
 }
+

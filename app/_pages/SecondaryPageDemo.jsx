@@ -5,7 +5,7 @@ import { Plus, ArrowLeft, CheckCircle2, Clock, BarChart2, Zap, Shield, Users } f
 import GlassNavbar from '../components/navigation/GlassNavbar';
 import Footer from '../components/footer/Footer';
 import { createPageUrl } from '@/utils';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 // ─── DATOS DE LA PÁGINA SECUNDARIA ───────────────────────────────────────────
 const DEMO_SECONDARY = {
@@ -265,3 +265,4 @@ export default function SecondaryPageDemo() {
     </div>
   );
 }
+

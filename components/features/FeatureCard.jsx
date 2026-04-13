@@ -128,3 +128,4 @@ export default function FeatureCard({
     </motion.div>
   );
 }
+
