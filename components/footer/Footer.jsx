@@ -85,7 +85,7 @@ export default function Footer() {
             >
               {[
                 { Icon: InstagramIcon, href: 'https://www.instagram.com/wetracking_/' },
-                { Icon: Linkedin, href: 'https://www.linkedin.com/company/wetracking/posts/?feedView=all' },
+                { Icon: LinkedinIcon, href: 'https://www.linkedin.com/company/wetracking/posts/?feedView=all' },
                 { Icon: FacebookIcon, href: 'https://www.facebook.com/profile.php?id=61568929877267' }
               ].map(({ Icon, href }, i) => (
                 <a
