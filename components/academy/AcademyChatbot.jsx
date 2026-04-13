@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect, useRef } from 'react';
 import { base44 } from '@/api/base44Client';
 import { MessageCircle, X, Send, Loader2, Paperclip, ImageIcon } from 'lucide-react';

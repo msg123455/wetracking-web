@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PlayCircle, Lock, CheckCircle, ClipboardList, MessageCircle, Flame, Trophy, ChevronDown, ChevronUp } from 'lucide-react';

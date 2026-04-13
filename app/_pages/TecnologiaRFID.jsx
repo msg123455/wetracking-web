@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Radio, Zap, Shield, Gauge, Wifi, ChevronRight, Sparkles } from 'lucide-react';

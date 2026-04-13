@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, X, Package, Zap, TrendingUp, MapPin, Clock, Shield, Truck, BarChart3, Layers, Tag, MousePointerClick, Grid3x3 } from 'lucide-react';

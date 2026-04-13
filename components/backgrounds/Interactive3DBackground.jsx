@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 // Background estático con CSS puro — sin Three.js para máximo rendimiento

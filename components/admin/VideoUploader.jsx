@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Upload, Loader2, CheckCircle, X } from 'lucide-react';

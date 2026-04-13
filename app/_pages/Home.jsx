@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import Interactive3DBackground from '@/components/backgrounds/Interactive3DBackground';
 import GlassNavbar from '@/components/navigation/GlassNavbar';
