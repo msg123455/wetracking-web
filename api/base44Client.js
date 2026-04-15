@@ -1,5 +1,11 @@
-import { createClient } from "@base44/sdk"
-
-export const base44 = createClient({
-  appId: process.env.NEXT_PUBLIC_BASE44_APP_ID || "",
-})
+export const base44 = {
+  auth: { me: async () => null },
+  entities: {},
+  agents: {
+    createConversation: async () => ({ id: null }),
+    subscribeToConversation: () => {},
+    addMessage: async () => {},
+  },
+  integrations: { Core: { UploadFile: async () => ({ file_url: null }) } },
+  functions: { invoke: async () => null },
+}
