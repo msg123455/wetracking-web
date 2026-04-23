@@ -21,7 +21,7 @@ const pageMap: Record<string, React.ComponentType> = {
 type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
-  return Object.keys(pageMap).map((slug) => ({ slug }))
+  return []
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
