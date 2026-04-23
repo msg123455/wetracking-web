@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { base44 } from '@/api/base44Client';
 import ReactMarkdown from 'react-markdown';
-import GlassNavbar from '../components/navigation/GlassNavbar';
-import Footer from '../components/footer/Footer';
+import GlassNavbar from '@/components/navigation/GlassNavbar';
+import Footer from '@/components/footer/Footer';
 
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
 
