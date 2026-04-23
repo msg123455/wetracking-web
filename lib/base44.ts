@@ -1,5 +1,5 @@
 const API = "https://api.base44.com/api/apps"
-const APP_ID = process.env.BASE44_APP_ID!
+const APP_ID = process.env.BASE44_API_ID!
 const API_KEY = process.env.BASE44_API_KEY!
 
 const headers = {
