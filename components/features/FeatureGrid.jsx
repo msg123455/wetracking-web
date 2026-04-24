@@ -113,7 +113,7 @@ export default function FeatureGrid() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {servicios.map((servicio, index) =>
             servicio.link ?
-            <Link key={index} to={servicio.link}>
+            <Link key={index} href={servicio.link}>
                   <FeatureCard
                 icon={servicio.icon}
                 title={servicio.title}

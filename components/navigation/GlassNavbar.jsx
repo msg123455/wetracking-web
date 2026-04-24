@@ -100,7 +100,7 @@ const DropdownMenu = ({ title, items, columns = 2 }) => {
               const isExternal = item.href.startsWith('http');
               const isHash = item.href.startsWith('#');
               const Component = (isExternal || isHash) ? 'a' : Link;
-              const linkProps = (isExternal || isHash) ? { href: item.href } : { to: item.href };
+              const linkProps = { href: item.href };
               const externalProps = isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {};
 
               return (
@@ -159,7 +159,7 @@ export default function GlassNavbar() {
           
           <div className="max-w-7xl mx-auto flex items-center justify-between relative">
             {/* Logo */}
-            <Link to={createPageUrl('Home')}>
+            <Link href={createPageUrl('Home')}>
               <motion.div 
                 className="flex items-center gap-3 cursor-pointer"
                 whileHover={{ scale: 1.02 }}
@@ -181,11 +181,11 @@ export default function GlassNavbar() {
               <DropdownMenu title="Servicios" items={serviciosItems} columns={2} />
               <DropdownMenu title="Soluciones" items={solucionesItems} columns={1} />
               <DropdownMenu title="Accesos" items={accesosItems} columns={1} />
-              <Link to={createPageUrl('TecnologiaRFID')} className="relative px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide group">
+              <Link href={createPageUrl('TecnologiaRFID')} className="relative px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide group">
                 Tecnología RFID
                 <motion.span className="absolute inset-0 border-2 border-[#00ffd7] rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300" />
               </Link>
-              <Link to={createPageUrl('Nosotros')} className="relative px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide group">
+              <Link href={createPageUrl('Nosotros')} className="relative px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide group">
                 Nosotros
                 <motion.span className="absolute inset-0 border-2 border-[#00ffd7] rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300" />
               </Link>
@@ -227,7 +227,7 @@ export default function GlassNavbar() {
               {serviciosItems.map((item, i) => {
                 const isExternal = item.href.startsWith('#');
                 const Component = isExternal ? 'a' : Link;
-                const linkProps = isExternal ? { href: item.href } : { to: item.href };
+                const linkProps = { href: item.href };
                 return (
                   <Component key={i} {...linkProps} className="block text-white/80 hover:text-white py-2 px-4 font-medium">{item.label}</Component>
                 );
@@ -245,8 +245,8 @@ export default function GlassNavbar() {
                 <a key={i} href={item.href} className="block text-white/80 hover:text-white py-2 px-4 font-medium">{item.label}</a>
               ))}
             </div>
-            <Link to={createPageUrl('TecnologiaRFID')} className="text-white/80 hover:text-white py-2 px-4 font-medium">Tecnología RFID</Link>
-            <Link to={createPageUrl('Nosotros')} className="text-white/80 hover:text-white py-2 px-4 font-medium">Nosotros</Link>
+            <Link href={createPageUrl('TecnologiaRFID')} className="text-white/80 hover:text-white py-2 px-4 font-medium">Tecnología RFID</Link>
+            <Link href={createPageUrl('Nosotros')} className="text-white/80 hover:text-white py-2 px-4 font-medium">Nosotros</Link>
             <a href="#blog" className="text-white/80 hover:text-white py-2 px-4 font-medium">Blog</a>
             <a href="https://wa.me/573117001527?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20las%20soluciones%20RFID%20de%20WeTracking" target="_blank" rel="noopener noreferrer">
               <button className="mt-2 px-6 py-3 bg-[#00ffd7] text-[#0b194f] font-semibold rounded-full w-full">

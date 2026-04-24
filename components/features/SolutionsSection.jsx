@@ -124,7 +124,7 @@ export default function SolutionsSection() {
                       {solution.description}
                     </p>
 
-                    <Link to={solution.link}>
+                    <Link href={solution.link}>
                       <motion.button
                         whileHover={{ scale: 1.05, x: 5 }}
                         whileTap={{ scale: 0.95 }}
